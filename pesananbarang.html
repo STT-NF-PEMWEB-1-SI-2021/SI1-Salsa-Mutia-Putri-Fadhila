@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body style="background-color: rgb(168, 154, 154); margin: 25px">
+    <div style="border: solid; background-color: rgb(255, 255, 255)">
+        <table style="width: 1000px;">
+        <tr>
+            <th>Home</th>
+            <th>|</th>
+            <th>Generate Link</th>
+            <th>|</th>
+            <th>Transaction History</th>
+            <th>|</th>
+            <th>Policy</th>
+            <th>|</th>
+            <th>Log Out</th>
+        </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <fieldset style="float: left;">
+        <form>
+            <img src="photo.jpg"> <br>
+            <input type="file" accept="image/*">
+        </form>
+        </fieldset>
+    </div>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>Tittle Here</td>
+                    <td>:</td>
+                    <td><input type="text" value="MacBook Air &#163;800"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td><input type="text" value="1234-5678"></td>
+                </tr>
+                <tr>
+                    <td>Bank</td>
+                    <td>:</td>
+                    <td><select>
+                        <option>Bank 1</option>
+                        <option>Bank 2</option>
+                        <option>Bank 3</option>
+                        <option>Bank 4</option>
+                        <option>Bank 5</option>
+                    </select></td>
+                </tr>
+                <tr>
+                   <td>Transaction</td>
+                   <td>:</td>
+                   <td><input type="number" value="1"></td> 
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" checked><label style="color: rgb(209, 83, 83);">Send to Mobile Phone</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" checked><label style="color: rgb(209, 83, 83);">Send to Email</label></td>
+                </tr>
+                <tr>
+                    <td>Send to Mobile Phone</td>
+                    <td>:</td>
+                    <td><input type="text" value="1234567890, 1234567891"></td>
+                </tr>
+                <tr>
+                    <td>Send to Email</td>
+                    <td>:</td>
+                    <td><input type="text" value="john@example.com, doe@example.com"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="height: 100px;"><input type="submit" value="Generate Nabr Link" style="background-color: rgb(209, 83, 83); color: white"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
