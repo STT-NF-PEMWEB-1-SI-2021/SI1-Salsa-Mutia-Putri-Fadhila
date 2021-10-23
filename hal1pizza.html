@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>form pesanan pizza</title>
+
+    <style>
+      table {margin: auto; padding: 1em;}
+      td {padding: 0 0.5em; vertical-align: top;}
+    </style>
+  </head>
+
+  <body style="background-image: url(blackboard-background-with-pizza_23-2148907816.jpg);">
+    <div style="background-color:rgba(255, 255, 255, 0.822); margin:auto; max-width: 1000px; border: 2px solid rgb(255, 255, 255); padding: 50px;">
+    <h1 style="text-align: center;">Black Goose Bistro | Pizza-on-Demand</h1>
+    <p style="text-align: center;">Our 12" wood-fired pizzas are available for delivery. Build your costum pizza and we"ll delivered it within an hour. </p>
+
+    <form method="post" action="hal2pizza.html">
+      <fieldset>
+        <legend>Your Information</legend>
+      <table>
+        <tr>
+          <td style="text-align: right;"><label for="name">Name: </label></td><td><input type="text" name="name" id="name" required /> </td>
+          <td style="text-align: right;"><label for="addr">Address: </label></td><td><input type="text" name="addr" id="addr" required /></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"><label for="telp">Telephon Number: </label></td><td><input type="number" name="telp" id="telp" required /></td>
+          <td style="text-align: right;"><label for="mail">Email: </label></td><td><input type="email" name="mail" id="mail" required /></td>
+        </tr>
+      </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pizza specs</legend>
+      <table>
+        <tr>        
+          <td>
+            <h3>Crust (Choose one):</h3>
+            <label><input type=checkbox name=extra id="mu" value="mu" /> Classic white</label><br />
+            <label><input type=checkbox name=extra id="pe" value="pe" /> Multigrain</label><br />
+            <label><input type=checkbox name=extra id="an" value="an" /> Cheesy-stiffed crust</label><br />
+            <label><input type=checkbox name=extra id="ch" value="ch" /> Gluten-free</label><br />
+          </td>
+
+          <td>
+            <h3>Size</h3>
+            <label><input type=radio name=base id="s" required value="s" /> Small</label><br />
+            <label><input type=radio name=base id="m" required value="m" /> Medium</label><br />
+            <label><input type=radio name=base id="l" required value="l" /> Large</label><br />
+          </td>
+          <td>
+            <h3>Topping</h3>
+            <input type="checkbox" id="toppings1" name="toppings1" value="">
+            <label for="toppings1">Red sauce</label> <br>
+            <input type="checkbox" id="toppings2" name="toppings2" value="">
+            <label for="toppings2">White sauce</label> <br>
+            <input type="checkbox" id="toppings3" name="toppings3" value="">
+            <label for="toppings3">Mozzarella Cheese</label> <br>
+            <input type="checkbox" id="toppings4" name="toppings4" value="">
+            <label for="toppings4">Pepperoni</label> <br>
+            <input type="checkbox" id="toppings5" name="toppings5" value="">
+            <label for="toppings5">Mushrooms</label> <br>
+            <input type="checkbox" id="toppings6" name="toppings6" value="">
+            <label for="toppings6">Peppers</label> <br>
+            <input type="checkbox" id="toppings7" name="toppings7" value="">
+            <label for="toppings7">Anchovies</label> <br>
+          </td>
+        </tr>
+      </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Number</legend>
+      <table>
+        <tr>
+          <td style="text-align: right;"><label for="del">How many pizzas:</label></td>
+          <td><input type="number" name="guest" min="1" max="6"></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"><label for="del">Desired Delivery Time:</label></td>
+          <td><input type="time" min="11:00" max="21:00" step="900" name="del" id="del" required /></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"><label for="instr">Add Messege: </label></td>
+          <td><textarea name="instr" id="instr" maxlength=1000></textarea></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"><label for="del"></label></td>
+          <td><input type="Submit" value="Bring me pizza"><input type="Reset" value="Reset"></td>
+        </tr>
+      </table>
+      </fieldset>
+    </form>
+    </div>
+  </body>
+</html>
