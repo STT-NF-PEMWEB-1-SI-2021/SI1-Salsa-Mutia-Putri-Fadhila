@@ -1,0 +1,121 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+fieldset.all{
+    background-color: rgb(176, 211, 182);
+    margin: 15px 15px;
+    border-color: azure;
+    border-radius: 25px;
+}
+
+nav{
+    width: 10%;
+    height: 200px;
+    padding: 20px 20px 0 20px;
+    margin: 40px 20px;
+    float: right;
+    text-align: end;
+    background-color: rgb(151, 190, 179);
+    color:white;
+}
+article{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    text-align: justify;
+    word-spacing: 5px;
+    background-color: rgb(149, 175, 167);
+}
+article h2{
+    display: inline;
+    margin-left: 7cm;
+    margin-top: 2cm;
+    justify-content: space-around;
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    padding: 10px;
+}
+
+section img{
+    width: 15%;
+    height: 225px;
+    border-radius: 25px;
+}
+
+section.profile p img{
+    float: left;
+    margin-right: 45px;
+    margin-left: 12px;
+    margin-top: 2px;
+    border: 1px solid rgb(255, 255, 255);
+}
+div.atas{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+div.atas table tr td video{
+    width: 350px;
+    height: 200px;
+    margin-right: 60px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+div.atas table.picture{
+    width: 150px;
+    height: 150px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border-style: solid;
+    border-color: rgb(158, 158, 158);
+}
+
+div.atas table.picture tr td img{
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+div.atas fieldset{
+    border-style: solid;
+    border-color: rgb(158, 158, 158);
+    margin: 0 5px 10px 50px;
+}
+
+div.atas fieldset img{
+    width: 30px;
+    height: 30px;
+}
+
+div.atas table.attachment tr td img{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+div.atas table.attachment tr td.link{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+fieldset footer{
+    margin: 0px 15px 15px ;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
