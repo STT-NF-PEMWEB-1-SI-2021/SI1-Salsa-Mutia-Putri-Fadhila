@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.3 - Salsa Mutia Putri Fadhila</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #container {
+            background-color: pink;
+            padding: 25px;
+        }
+        #container > header {
+            margin-bottom: 25px;
+        }
+        #container > footer {
+            margin-top: 25px;
+        }
+        #content {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+        }
+        #content>article {
+            background: #fa7f7f;
+            flex: 1;
+            order: 2;
+            width: 200px;
+            margin-left: 15px;
+        }
+        img {
+            width: 20%;
+            height: auto;
+            margin-left: 10px;
+            margin-top: 10cm;
+        }
+        #content > aside {
+            background: #70c9c7;
+            flex: 0 0 20vw;
+            order: 1;
+            margin-right: 10px;
+        }
+        header, footer {
+            background: #a1e4d7;
+            height: 10vh;
+        }
+        header, footer, article, aside {
+            padding: 1em;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        } 
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>Header</header>
+        <div id="content">
+            <article><p>Article</p>
+            <img src="https://i.pinimg.com/236x/9d/80/b3/9d80b33d23ea6eae936a10091eda3ea2.jpg" alt="image 1">
+            <img src="https://i.pinimg.com/236x/b8/b6/55/b8b655c65462bc2df80f4e2b9f3b95d5.jpg" alt="image 2">
+            <img src="https://i.pinimg.com/236x/14/d2/7c/14d27c2f05805e5c581ca6124f815b1a.jpg" alt="image 3">
+            </article>
+            <aside>Aside</aside>
+        </div>
+            <footer>Footer</footer>
+    </div>
+</body>
+</html>

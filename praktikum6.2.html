@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.2 - Salsa Mutia Putri Fadhila</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+        #main{
+            display: flex;
+            flex: 1;
+        }
+        #main > #navigasi{
+            display: flex;
+            max-width: 18vw;
+            order: 1;
+            flex: 0 0 15vw;
+            background-color: pink;
+        }
+        #main > #content{
+            display: flex;
+            flex-direction: column;
+            order: 2;
+        }
+        #main > article{
+            flex: 1;
+            order: 1;
+            width: 77vw;
+        }
+        #main > aside{
+            flex: 0 0 18vw;
+            background: lightskyblue;
+            order: 2;
+        }
+        header, footer{
+            background: khaki;
+            height: 20vh;
+        }
+        header, footer, nav, article, aside{
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">    
+        <div id="navigasi">
+            <nav>Nav</nav>
+        </div>
+    
+        <div id="content">
+            <header>Header</header>
+            <div id="main">
+                <article>Article</article>
+                <aside>Aside</aside>
+            </div>
+            <footer>Footer</footer>
+        </div>
+    </div>
+</body>
+</html>
