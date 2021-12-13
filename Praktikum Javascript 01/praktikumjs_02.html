@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <tittle></tittle>
+        <script>
+            function kursRupiah(){
+                const rp = 14650;
+                let bill = document.getElementById("rp").value;
+                console.log("1 Dollar : " + rp + "rp");
+                let dollar = bill / rp;
+                console.log("Hasil : " + "$" + dollar);
+                let hasilKurs = document.getElementById("hasil_1");
+                hasilKurs.innerHTML = "Nilai kurs dollar : " +"$"+ dollar;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Menghitung Kurs Rupiah</h1>
+        Masukkan nilai rupiah :
+        <input type="number" id="rp" value="" size="10">
+        </br>
+        <button onclick="kursRupiah()">Nilai</button>
+        <br>
+        Hasil Nilai Kurs : 
+        </br>
+        <span id="hasil_1"></span>
+        <br>
+    </body>
+</html>
