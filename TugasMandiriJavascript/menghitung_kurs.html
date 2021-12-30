@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Mandiri Javascript - Kurs Rupiah </title>
+</head>
+<style>
+    fieldset{
+            width: 50%;
+            justify-items: center;
+            background-color: azure;
+        }
+        td{
+            border: 1px solid black;
+        }
+</style>
+<script type="text/javascript">
+    function countMoney() {
+        let user_input = document.getElementById('money_val').value;
+
+        let currency_select = document.getElementById('currency_select').value;
+        let currency_default = document.getElementById('currency_default').value;
+
+        let dolarUs = document.getElementById('dolarUs').value; 
+        let dolarSing = document.getElementById('dolarSing').value; 
+        let ringgit = document.getElementById('ringgit').value; 
+        let yen = document.getElementById('yen').value; 
+        let euro = document.getElementById('euro').value; 
+        let riyal= document.getElementById('riyal').value; 
+
+       
+        let result = 0;
+
+        if(currency_select == currency_default){
+            result = result;
+
+        }else if (currency_select == dolarUs) {
+            result = user_input * 9915;
+            document.getElementById('result').innerHTML = result;
+
+        } else if(currency_select == dolarSing) {
+            result = user_input * 13472;
+            document.getElementById('result').innerHTML = result;
+
+        } else if (currency_select == ringgit) {
+            
+            result = user_input * 874;
+            document.getElementById('result').innerHTML = result;
+
+        } else if (currency_select == yen) {
+            result = user_input * 120;
+            document.getElementById('result').innerHTML = result;
+            
+        } else if (currency_select == euro) {
+            result = user_input * 15888;
+            document.getElementById('result').innerHTML = result;
+            
+        }else {
+            result = user_input * 3592;
+            document.getElementById('result').innerHTML = result;
+            
+        }
+    }
+</script>
+<body>
+    <div class="container">
+        <div class="currecy-box">
+            <fieldset>
+            <legend>Kurs Rupiah - Mata Uang Asing</legend>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Masukan Nilai</th>
+                        <th>Valas</th>
+                        <th>Nilai Rupiah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" name="money_val" id="money_val"></td>
+                        <td>
+                            <select onchange="countMoney();" name="currency_select" id="currency_select">
+                                 <option id="currency_default" value="not_select">Not Selected</option>
+                                <option id="dolarUs" value="dolar_us">Dollar Us</option>
+                                <option id="dolarSing" value="dolar_singapore">Dollar Singapore</option>
+                                <option id="ringgit" value="ringgit_malaysia">Ringgit Malaysia</option>
+                                <option id="yen" value="yen_jepang">Yen Jepang</option>
+                                <option id="euro" value="euro">Euro</option>
+                                <option id="riyal" value="riyal_arab">Riyal Arab Saudi</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div id="result">0</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </fieldset>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

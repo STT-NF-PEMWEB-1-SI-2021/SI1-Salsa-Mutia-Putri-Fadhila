@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .image{
+      width: 600px;
+      height: 350px;
+    }
+  </style>
+
+  <script>
+    function animal() {
+      let animals = document.getElementById("animals").value;
+
+      if (animals == "Choose Picker") {
+        choose = document.getElementById("all").innerHTML 
+      }
+
+      if (animals == "bison") {
+        document.getElementById("all").innerHTML 
+        = '<img class="image" src="http://1.bp.blogspot.com/-xBpgx025Lb0/UJxvZCP25SI/AAAAAAAAAQU/OdALBF_5mm4/s1600/Printable-Ape-Coloring-Pages-Free-mewarnaigambar.web.id.jpg">'
+        window.alert("This is a picture of " + animals);
+      }
+
+      if (animals == "elephant") {
+        document.getElementById("all").innerHTML 
+        = '<img class="image" src="https://st4.depositphotos.com/4805703/26883/i/600/depositphotos_268838882-stock-photo-elephant-isolated-on-white-background.jpg">'
+        window.alert("This is a picture of " + animals);
+      }
+
+      if (animals == "cat") {
+        document.getElementById("all").innerHTML 
+        = '<img class="image" src="https://awsimages.detik.net.id/community/media/visual/2020/09/20/jenis-jenis-kucing-peliharaan-12.jpeg?w=1200">'
+        window.alert("This is a picture of " + animals);
+      }
+
+      if (animals == "tupai") {
+        document.getElementById("all").innerHTML 
+        = '<img class="image" src="https://data2.1freewallpapers.com/download/squirrel-white-background-animal.jpg">' 
+        window.alert("This is a picture of " + animals);
+      }
+
+      if (animals == "dog") {
+        document.getElementById("all").innerHTML 
+        = '<img class="image" src="https://sibinatang.com/wp-content/uploads/2021/04/Gambar-Foto-Anjing-Pomeranian-Lucu-1.jpg">'
+        window.alert("This is a picture of " + animals);
+      }
+
+      if (animals == "rusa") {
+        document.getElementById("all").innerHTML 
+        = '<img class="image" src="https://media.istockphoto.com/illustrations/watercolor-hand-drawn-deer-isolated-on-white-background-illustration-id1192545996?k=20&m=1192545996&s=170667a&w=0&h=IUaLtc3z6ryYXBkcHF5XAgYR9F0Uw1iJ9SO-97cpulE=">'
+        window.alert("This is a picture of " + animals);
+      }
+    }
+  </script>
+
+  <body>
+    <h1>Image Picker</h1> <hr>
+    <p>Choose the picture you want</p>
+    <div id="all">
+    <select id="animals" onchange="animal()">
+      <option value="Choose Picker">Choose Picker</option>
+      <option value="bison">Bison</option>
+      <option value="elephant">Elephant</option>
+      <option value="cat">Cat</option>
+      <option value="tupai">Tupai</option>
+      <option value="dog">Dog</option>
+      <option value="rusa">Rusa</option>
+    </select>
+  </div>
+  </body>
+</html>

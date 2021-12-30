@@ -1,0 +1,64 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Praktikum Mandiri Javascript - Chat Message</title>
+ 
+    <style>
+     body {
+         background: #333;
+     }
+
+     #box-input {
+        display: grid;
+        height: 50%;
+        align-items: end;
+     }
+
+     #rsChat {
+        height: 50%;
+     }
+
+     input {
+         width: 80%;
+         height: 40px;
+     }
+
+     button {
+         width: 18%;
+         height: 46px;
+     }
+
+     .result {
+         width: 100%;
+     }
+    </style>
+
+    <script type="text/javascript">
+    function showChat() {
+        var isiChat = document.getElementById("message").value; 
+        var node = document.createElement("div");                 
+        var textnode = document.createTextNode(isiChat);         
+        node.appendChild(textnode);                              
+        document.getElementById("rsChat").appendChild(node);     
+    }   
+
+    </script>
+
+</head>
+ <body>
+
+        <div id="box" style="width: 80%; height: 400px; background-color: white">
+            <div id="rsChat"></div>
+            <div id="box-input">
+                <div id="input">
+                    <input type="text" name="message" id="message" value="">
+                    <button type="submit" id="submit" onclick="showChat()">Kirim</button>
+                </div>
+            </div>
+        </div>   
+ </body>
+ </html>
