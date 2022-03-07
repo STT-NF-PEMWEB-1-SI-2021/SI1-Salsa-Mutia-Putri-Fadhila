@@ -56,7 +56,7 @@
                         <label for="produk_1" class="custom-control-label">KULKAS</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input name="produk" id="produk_2" type="radio" class="custom-control-input" value="MESINCUCI"> 
+                        <input name="produk" id="produk_2" type="radio" class="custom-control-input" value="MESIN CUCI"> 
                         <label for="produk_2" class="custom-control-label">MESIN CUCI</label>
                     </div>
                     </div>
@@ -112,18 +112,18 @@
         $produk = $_POST['produk'];
         $jumlah = $_POST['jumlah'];
 
-        if ($produk == "TV"){
-            $harga = 4200000;
-        }elseif($produk == "Kulkas"){
-            $harga = 3100000;
-        }elseif ($produk == "Mesin Cuci"){
-            $harga = 3800000;
-        } 
+        if ($produk == 'TV') {
+            $harga = $jumlah * 4200000;
+        }elseif ($produk == 'KULKAS') {
+            $harga = $jumlah * 3100000;
+        }elseif ($produk == 'MESIN CUCI') {
+            $harga = $jumlah * 3800000;
+        }
 
         echo 'Nama Customer : '. $costumer;
         echo '<br/> Produk Pilihan : '. $produk;
         echo '<br/> Jumlah Beli : '. $jumlah;
-        echo '<br/> Total Belanja : Rp. '.($harga * $jumlah).',-';
+        echo "<br/> Total Belanja : Rp" . number_format($harga);
     ?>
     <!-- /PHP -->
 
