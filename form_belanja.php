@@ -107,6 +107,7 @@
 
     <!-- PHP -->
     <?php
+        error_reporting(0);
         $costumer = $_POST['costumer'];
         $produk = $_POST['produk'];
         $jumlah = $_POST['jumlah'];
